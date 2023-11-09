@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+
+.banner-bg {
+    background-color: black;
+}
+
+.banner-heading {
+    color: #FF9F20;
+    font-family: Span;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55px;
+    /* 110% */
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+
+.banner-para1 {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+    /* 147.059% */
+    text-transform: uppercase;
+}
+
+.banner-para2 {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.banner-li {
+    list-style: none;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.btn1 {
+    display: flex;
+    width: 28%;
+    height: 56px;
+    padding: 0px 41.624px 0px 42px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    /* 100% */
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid #FF9F20;
+    background: #FF9F20;
+}
+
+.btn2 {
+    display: flex;
+    width: 28%;
+    height: 56px;
+    padding: 0px 41.624px 0px 42px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    /* 100% */
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid #FF9F20;
+    background: black;
+}
+
+.b-icons {
+    width: 18vh;
+    aspect-ratio: 3/3;
+}
+
+.banner-ul {
+    margin-left: -32px;
+}
+
+.form-heading1 {
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    /* 120.69% */
+    letter-spacing: -1px;
+}
+
+.form-heading2 {
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    /* 100% */
+}
+
+.form-h4 {
+    margin: 15px 10px;
+    color: #FEFEFE;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    /* 100% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #FF9F20;
+    padding: 15px 93.609px 15px 75.94px;
+}
+
+
+
+.banner-inputs {
+    display: flex;
+    width: 91%;
+    /* height: 47px; */
+    padding: 13.31px 17px 13.69px 17px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    /* 100% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    width: 91%;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #FF9F20;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    .form-div {
+        width: 100%;
+    }
+
+    .banner-br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .banner-inputs {
+        padding: 8px 8px;
+    }
+
+    .form-btn {
+        padding: 8px 8px;
+    }
+
+    #banner-inputs {
+        height: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+
+    .banner-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    .btn1 {
+
+        width: 35%;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .btn2 {
+        width: 35%;
+        height: 50px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .btn1 {
+
+        width: 40%;
+        height: 40px;
+        font-size: 8px;
+    }
+
+    .btn2 {
+        width: 40%;
+        height: 40px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .b-icons {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner-li {
+        border: none !important;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .banner-ul {
+        flex-direction: column !important;
+    }
+
+
+}

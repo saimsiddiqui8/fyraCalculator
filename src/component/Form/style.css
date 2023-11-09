@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+.bgg{
+    background-color:  black !important ;
+    border-top: 50px solid black;
+}
+.h2-secondary{
+    font-family: span;
+    color: black;
+    word-spacing: 8px;
+    font-size: 1.6rem;
+}
+
+.h2-secondary2 span{
+    color:  #FF9F20 !important ;
+}
+.form-control-new{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke !important; 
+    color: black !important;
+    width: 95%;
+    padding: 12px 10px;
+    margin: 7px 0px;
+    border: none;
+    font-weight: 500;
+}
+
+.form-control-new::-webkit-input-placeholder{
+    color: black !important;
+}
+
+
+.form-para{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+
+.label-box{
+    width: 28px;
+    /* outline: 1px solid #FF2618 !important; */
+}
+.btnsubmit2{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FF9F20 !important; 
+    color: white !important;
+    width: 95%;
+    padding: 16px 0px;
+    margin: 7px 0px;
+    font-weight: 500;
+    border: none;
+}
+
+.form-div{
+    border: 5px solid #FF9F20;
+}
+@media (max-width: 520px) {
+    #landingForm {
+      font-size: 4rem !important;
+    }
+}
+@media (max-width: 450px) {
+    #landingForm {
+      font-size: 3rem !important;
+    }
+}

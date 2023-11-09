@@ -1,0 +1,52 @@
+
+.pub-bg{
+    background: url(../../assets/pubbg.png) no-repeat center center/cover;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #FF9F20;
+    border-bottom: 1px solid #FF9F20;
+    /* background-color: black; */
+}
+
+.pub-h2{
+    color: #FF9F20;
+text-align: center;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: 55px; /* 110% */
+letter-spacing: -1px;
+}
+
+
+.pub-img{
+    width: 85%;
+}
+
+@media screen and (max-width: 575px) {
+
+    .pub-img{
+        width: 60%;
+        margin: 20px 0px;
+    }
+  }
+@media screen and (max-width: 390px) {
+
+    .pub-h2{
+        
+    font-size: 42px;
+    line-height: 50px; /* 110% */
+    
+    }
+  }
+@media screen and (max-width: 395px) {
+
+    .pub-h2{
+        
+    font-size: 40px;
+    line-height: 50px; /* 110% */
+    
+    }
+  }

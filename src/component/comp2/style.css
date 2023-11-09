@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+.comp2-bg{
+    background: url(../../assets/comp2bg.png) no-repeat center center/cover;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #FF9F20;
+    border-bottom: 1px solid #FF9F20;
+    /* background-color: black; */
+}
+
+.comp2-h2{
+    color: #FF9F20;
+text-align: center;
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 600;
+line-height: 55px; /* 85.938% */
+letter-spacing: -1px;
+}
+
+a{
+    text-decoration: none;
+    color: white !important;
+}
+
+.comp2-para{
+    color: #E6E6E6;
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.comp2-btn1{
+    display: flex;
+width: 14%;
+height: 56px;
+padding: 0px 41.624px 0px 42px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+    text-transform: uppercase;
+    border-radius: 5px;
+border: 2px solid #FF9F20;
+background: #FF9F20;
+}
+.comp2-btn2{
+    display: flex;
+width: 14%;
+height: 56px;
+padding: 0px 41.624px 0px 42px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+    text-transform: uppercase;
+    border-radius: 5px;
+border: 2px solid #FF9F20;
+background: black;
+}
+
+
+@media screen and (max-width: 991px) {
+    .comp2-h2{
+        line-height: 70px;
+    }
+    
+  }
+@media screen and (max-width: 768px) {
+    .comp2-h2{
+        font-size: 54px;
+
+    }
+  }
+@media screen and (max-width: 526px) {
+    .comp2-h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+  }
+@media screen and (max-width: 487px) {
+    .comp2-h2{
+        font-size: 46px;
+    }
+  }
+@media screen and (max-width: 449px) {
+    .comp2-h2{
+        font-size: 42px;
+    }
+  }
+@media screen and (max-width: 410px) {
+    .comp2-h2{
+        font-size: 38px;
+        line-height: 50px;
+    }
+  }
+@media screen and (max-width: 371px) {
+    .comp2-h2{
+        font-size: 35px;
+    }
+  }
+@media screen and (max-width: 342px) {
+    .comp2-h2{
+        font-size: 32px;
+        line-height: 45px;
+
+    }
+  }
+@media screen and (max-width: 313px) {
+    .comp2-h2{
+        font-size: 28px;
+        line-height: 40px;
+
+    }
+  }
+
+
+  @media screen and (max-width: 992px) {
+
+    .comp2-btn1{ 
+    width: 20%;
+    }
+    .comp2-btn2{
+        width: 20%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+
+    .comp2-btn1{
+        
+    width: 25%;
+    /* height: 50px; */
+        /* font-size: 10px; */
+    }
+    .comp2-btn2{
+        width: 25%;
+    /* height: 50px; */
+        /* font-size: 10px; */
+    }
+  }
+  @media screen and (max-width: 540px) {
+
+    .comp2-btn1{
+        
+    width: 30%;
+    height: 50px;
+
+    }
+    .comp2-btn2{
+        width: 30%;
+    height: 50px;
+       
+    }
+  }
+  @media screen and (max-width: 430px) {
+
+    .comp2-btn1{
+        
+    width: 35%;
+    height: 46px;
+
+    }
+    .comp2-btn2{
+        width: 35%;
+    height: 46px;
+       
+    }
+  }
+  @media screen and (max-width: 370px) {
+
+    .comp2-btn1{
+        
+    width: 40%;
+    height: 42px;
+    font-size: 10px;
+
+    }
+    .comp2-btn2{
+        width: 40%;
+    height: 42px;
+    font-size: 10px;
+
+       
+    }
+  }

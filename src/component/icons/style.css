@@ -1,0 +1,30 @@
+
+
+.icon-bg{
+    background-color:  #FF9F20;
+}
+
+
+.icon-heading{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: 55px; /* 110% */
+letter-spacing: -1px;
+}
+
+.icon-img{
+    width: 90%;
+    /* height: 65%; */
+}
+
+/* @media screen and (max-width: 575px) {
+
+    .icon-img{
+        width: 75%;
+        height: 65%;
+    }
+  } */

@@ -1,0 +1,36 @@
+
+
+.comp3third-h{
+    color: #FF9F20;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 69px; /* 107.813% */
+    letter-spacing: -1px;
+}
+
+@media screen and (max-width: 466px) {
+
+    
+    .comp3third-h{
+     font-size: 54px;
+     line-height: 66px;
+    }
+  }
+@media screen and (max-width: 398px) {
+
+    
+    .comp3third-h{
+     font-size: 45px;
+     line-height: 60px;
+    }
+  }
+@media screen and (max-width: 338px) {
+
+    
+    .comp3third-h{
+     font-size: 40px;
+     line-height: 50px;
+    }
+  }

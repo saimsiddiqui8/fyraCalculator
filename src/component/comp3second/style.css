@@ -1,0 +1,43 @@
+
+
+.comp3second-bg{
+    background-color: black;
+    border-top: 0.5px solid #FF9F20;
+    /* border-bottom: 1px solid #FF9F20; */
+}
+
+.comp3second-h{
+    color: #FF9F20;
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 600;
+line-height: 69px; /* 107.813% */
+letter-spacing: -1px;
+}
+
+@media screen and (max-width: 431px) {
+
+    .comp3second-h{
+        font-size: 53px;
+        line-height: 62px;
+    }
+     
+  }
+@media screen and (max-width: 362px) {
+
+    .comp3second-h{
+        font-size: 47px;
+        line-height: 58px;
+    }
+     
+  }
+  
+@media screen and (max-width: 325px) {
+
+    .comp3second-h{
+        font-size: 39px;
+        line-height: 54px;
+    }
+     
+  }

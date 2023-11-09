@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+.comp4-bg{
+  background-color: black;
+  border-top: 1px solid #FF9F20;
+  border-bottom: 1px solid #FF9F20;
+}
+
+.comp4-h2{
+    color: #FF9F20;
+text-align: center;
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 600;
+line-height: 55px; /* 85.938% */
+letter-spacing: -1px;
+}
+
+.comp4-para{
+    color: #E6E6E6;
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.comp4-span{
+    color: #E6E6E6;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}
+
+@media screen and (max-width: 485px) {
+    .comp4-h2{
+       font-size: 52px;
+    line-height: 64px; /* 85.938% */
+
+    }
+    
+  }
+@media screen and (max-width: 396px) {
+    .comp4-h2{
+       font-size: 45px;
+    line-height: 55px; /* 85.938% */
+
+    }
+    
+  }
+@media screen and (max-width: 344px) {
+    .comp4-h2{
+       font-size: 36px;
+    line-height: 45px; /* 85.938% */
+
+    }
+    
+  }

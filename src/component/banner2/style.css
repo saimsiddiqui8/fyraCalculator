@@ -1,0 +1,130 @@
+
+
+
+.banner2-h{
+    color: #F9F6EF;
+text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.50);
+font-family: Poppins;
+font-size: 75px;
+font-style: normal;
+font-weight: 600;
+line-height: 75.5px; /* 100.667% */
+letter-spacing: -0.75px;
+}
+
+.banner2-span{
+    color: #FF9F20;
+    font-family: Kaushan Script !important;
+font-size: 75px;
+font-style: normal;
+font-weight: 100;
+line-height: 75.5px;
+letter-spacing: -0.75px;
+}
+
+.banner2-para{
+    color: #F9F6EF;
+text-align: justify;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 148.5%; /* 23.76px */
+letter-spacing: -0.15px;
+}
+
+
+.banner2btn1{
+    border-radius: 5px;
+background: #FF9F20;
+color: #000;
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 13px; /* 81.25% */
+text-transform: uppercase;
+display: inline-flex;
+height: 57px;
+padding: 0px 34.77px 0px 35px;
+justify-content: center;
+align-items: center;
+}
+
+.banner2btn2{
+    border-radius: 5px;
+border: 2px solid #FF9F20;
+background-color: black;
+color: #FFF;
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 12px; /* 75% */
+text-transform: uppercase;
+display: inline-flex;
+height: 57px;
+padding: 0px 34.77px 0px 35px;
+justify-content: center;
+align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+
+    .banner2-para{
+    text-align: center;
+    }
+     
+  }
+@media screen and (max-width: 486px) {
+
+    .banner2-h{
+    font-size: 60px;
+    line-height: 70px; /* 100.667% */
+    }
+    .banner2-span{
+    font-size: 60px;
+    line-height: 70px;
+    }
+
+    .banner2btn1{
+        font-size: 12px;
+        line-height: 6px; /* 75% */
+        padding: 0px 13px 0px 13px;
+    }
+
+
+    .banner2btn2{
+    font-size: 12px;
+    line-height: 6px; /* 75% */
+    padding: 0px 13px 0px 13px;
+    }
+  }
+
+@media screen and (max-width: 397px) {
+
+    .banner2-h{
+    font-size: 50px;
+    line-height: 60px; /* 100.667% */
+    }
+    .banner2-span{
+    font-size: 50px;
+    line-height: 60px;
+    }
+  }
+@media screen and (max-width: 337px) {
+
+    .banner2-h{
+    font-size: 40px;
+    line-height: 52px; /* 100.667% */
+    }
+    .banner2-span{
+    font-size: 40px;
+    line-height: 52px;
+    }
+  }
+
+  
+  

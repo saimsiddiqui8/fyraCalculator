@@ -1,0 +1,56 @@
+#container-fluid1{
+    background-color: black;
+  border-top: 1px solid #FF9F20;
+
+}
+
+#btn1{
+    background-color: black !important;
+    border-color:  #FF9F20 !important;
+}
+.forborder{
+    border: 1px solid #FF9F20;
+    border-radius: 10px;
+}
+.box {
+    border: 1px solid #FF9F20;
+    padding: 20px;
+    margin: 40px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .box:hover {
+    background-color: rgb(12, 11, 11);
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+
+  .card-para {
+    color: #F9F6EF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.16px;
+  }
+
+  #formob {
+    display: none;
+ }
+
+  #r-icon{
+    width: 35% !important;
+    /* height: 20%; */
+  }
+
+  @media only screen and (max-width: 576px) {
+    #formob {
+       display: block;
+    }
+    #forlg{
+        display: none;
+    }
+
+}
+

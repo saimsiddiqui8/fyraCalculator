@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Saira:ital,wght@0,100;0,700;1,700&display=swap');
+
+
+.comp7-bg{
+    background-color: black;
+    border-top: 1px solid #FF9F20;
+    border-bottom: 1px solid #FF9F20;
+}
+
+.comp7-h2{
+    color: #FF9F20;
+text-align: center;
+font-family: Poppins;
+font-size: 75px;
+font-style: normal;
+font-weight: 600;
+line-height: 55px; /* 73.333% */
+letter-spacing: -1px;
+}
+
+
+.icon-h2{
+    margin-left: -12px;
+    width: 3.8rem;
+    text-align: center;
+    color: #FFF !important;
+font-family: DM Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 100% */
+background: #FF9F20;
+box-shadow: 7px 6px 10px 0px rgba(255, 111, 111, 0.30);
+
+}
+
+.content-h2{
+    color: #232323;
+font-family: DM Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 93.333% */
+letter-spacing: -1px;
+}
+
+.content-para{
+    color: #54595F;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+.m-width{
+    background-color: #FFF;
+}
+
+
+
+
+@media screen and (max-width: 1166px) {
+    
+.m-width{
+    width: 32rem !important;
+}
+  
+}
+
+@media screen and (max-width: 1032px) {
+    
+.m-width{
+    width: 28rem !important;
+}
+  
+}
+@media screen and (max-width: 904px) {
+    
+.m-width{
+    width: 24rem !important;
+}
+  
+}
+@media screen and (max-width: 776px) {
+    
+.m-width{
+    width: 80% !important;
+}
+  
+}
+@media screen and (max-width: 540px) {
+    
+.m-width{
+    width: 100% !important;
+}
+.content-h2{
+    
+    text-align: center;
+    line-height: 37px;
+  
+    }
+  
+}
+@media screen and (max-width: 400px) {
+    
+    .content-para{
+        text-align: center;
+    line-height: 24px; /* 150% */
+    }
+    
+  
+}
+@media screen and (max-width: 419px) {
+    
+    .comp7-h2{
+    font-size: 65px;
+    line-height: 65px; /* 73.333% */
+  
+    }
+}
+@media screen and (max-width: 365px) {
+    
+    .comp7-h2{
+    font-size: 57px;
+    line-height: 60px; /* 73.333% */
+  
+    }
+}
+@media screen and (max-width: 322px) {
+    
+    .comp7-h2{
+    font-size: 49px;
+    line-height: 55px; /* 73.333% */
+  
+    }
+}

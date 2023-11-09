@@ -1,0 +1,86 @@
+.calcBg {
+    background-color: black;
+}
+
+#personalDetails {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.7px;
+    /* 170% */
+    letter-spacing: 0.4px;
+}
+
+#hr {
+    border: none;
+    height: 1px;
+    background: white;
+    line-height: 2px;
+}
+
+#calcHead {
+    color: #FF9F20;
+    text-align: center;
+    font-family: Span;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    /* 135% */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+#calcPara {
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 125% */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+#dropdown-basic {
+    border-radius: 3.841px !important;
+    background: #FF9F20 !important;
+    color: #000 !important;
+    /* padding: 0px 60px; */
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdownItem:hover {
+    background-color: #FF9F20 !important;
+}
+
+.calSubmitBtn {
+    border-radius: 30px;
+    background: #FF9F20;
+    padding: 8px 18.58px 9.98px 20px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 830px) {
+
+    .w-50 {
+        width: 75% !important;
+    }
+
+}
+@media screen and (max-width: 430px) {
+
+    .w-50 {
+        width: 95% !important;
+    }
+    .w-75 {
+        width: 95% !important;
+    }
+
+}

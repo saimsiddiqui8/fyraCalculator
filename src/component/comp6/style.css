@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+
+.comp6-bg{
+    background-color: black;
+    border-top: 1px solid #FF9F20;
+    border-bottom: 1px solid #FF9F20;
+   
+}
+.ant-popover-inner{
+    background-color: black !important;
+    border: 3px solid #FF9F20 !important;
+}
+
+
+.comp6-h2{
+    color: #FF9F20;
+text-align: center;
+font-family: sans-serif;
+font-size: 75px;
+font-style: normal;
+font-weight: 500;
+line-height: 65px; 
+letter-spacing: -1px;
+text-transform: capitalize;
+}
+
+.comp6-btn{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px; /* 81.25% */
+    text-transform: uppercase;
+    border-radius: 40px;
+background: #FF9F20;
+/* display: inline-flex; */
+height: 57px;
+padding: 0px 59px;
+margin-top: 5rem;
+/* justify-content: center;
+align-items: center; */
+}
+
+.imgs{
+    width: 85%;
+    cursor: pointer;
+}
+
+.img1-h{
+    color: #FF9F20;
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 100% */
+text-transform: capitalize;
+}
+
+.img1-span{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+.img1-para{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+text-transform: capitalize;
+}
+
+  
+@media screen and (max-width: 768px) {
+
+    .comp6-btn{
+    width: 13rem;
+    font-size: 12px;
+    height: 50px;
+
+    }
+   
+  }
+@media screen and (max-width: 370px) {
+
+    .comp6-h2{
+   
+    font-size: 55px;
+    line-height: 62px; /* 73.333% */
+    }
+  }
+
+  #div1{
+    height: 300px;
+    width: 20rem;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+  }
+
+#div1::-webkit-scrollbar{
+    width: 10px;
+}
+#div1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color: white;
+}
+#div1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    color: white;
+    background-color: #FF9F20;
+}
+
+@media screen and (max-width: 370px) {
+    #div1{
+        height: 300px;
+        width: auto !important;
+     
+      }
+    
+  }

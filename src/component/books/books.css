@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+
+.links{
+    background-color: black;
+    border-top: 1px solid #FF9F20;
+    border-bottom: 1px solid #FF9F20;
+    border: none !important;
+}
+
+.books-h2{
+    color: #FF9F20;
+text-align: center;
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: 55px; /* 85.938% */
+letter-spacing: -1px;
+}
+
+.books-para{
+    color: #FFF;
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.books-para span{
+    color: #FF9F20;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+}
+
+.ant-card-head{
+    background-color: black !important;
+}
+
+
+
+.ant-tabs-tab{
+    margin: 5px 12px !important;
+}
+
+
+
+.ant-tabs-nav-list{
+    /* margin: 10px !important; */
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+
+}
+
+
+#booksbtn1, #booksbtn2 , #booksbtn3 , #booksbtn4 ,#booksbtn5 , #booksbtn6{
+    color: #FFF !important;
+text-align: center !important;
+font-family: DM Sans !important;
+font-size: 12px !important;
+font-style: normal !important;
+font-weight: 500 !important;
+line-height: 12px !important; 
+letter-spacing: 1px !important;
+text-transform: uppercase !important;
+background-color: black;
+border-radius: 5px !important;
+border: 2px solid #FF9F20 !important; 
+text-wrap: nowrap;
+}
+
+#booksbtn1{
+    display: flex !important;
+width: 8.708rem !important;
+height: 56px;
+padding: 0px 41.63px 0px 42px !important;
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+#booksbtn2{
+    display: flex !important;
+width: 11.524rem !important;
+height: 56px;
+padding: 0px 41.645px 0px 42px !important;
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+#booksbtn3 {
+    display: flex !important;
+width: 10.201rem !important;
+height: 56px;
+padding: 0px 41.678px 0px 42px !important;
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+#booksbtn4{
+    display: flex !important;
+width: 11rem !important;
+height: 56px;
+padding: 0px 41.658px 0px 42px !important;
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+#booksbtn5{
+    display: flex !important;
+width: 12.571rem !important;
+height: 56px;
+padding: 0px 41.619px 0px 42px !important;
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+#booksbtn6{
+    display: flex !important;
+width: 12.571rem !important;
+height: 56px;
+padding: 0px 41.619px 0px 42px !important;
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+.ant-tabs-tab{
+    background-color: black !important;
+    border-radius: 5px !important;
+border: 2px solid #FF9F20 !important; 
+}
+
+
+.ant-tabs-tab-active{
+    background-color: #FF9F20 !important;
+    border-bottom: none !important;
+    outline: none !important;
+
+}
+
+
+.books{
+    width: 98% !important; 
+}
+
+#booksbtn1, #booksbtn2 , #booksbtn3 , #booksbtn4 ,#booksbtn5 , #booksbtn6{
+    flex: 2 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .books{
+        width: 55% !important; 
+    }
+  }
+
+@media screen and (max-width: 420px) {
+
+    .books{
+        width: 80% !important; 
+    }
+  }
+@media screen and (max-width: 528px) {
+
+    .books-h2{
+        font-size: 55px;
+        line-height: 60px;
+    }
+  }
+@media screen and (max-width: 455px) {
+
+    .books-h2{
+        font-size: 50px;
+        line-height: 55px;
+    }
+  }
+@media screen and (max-width: 415px) {
+
+    .books-h2{
+        font-size: 45px;
+        line-height: 50px !important;
+    }
+  }
+@media screen and (max-width: 374px) {
+
+    .books-h2{
+        font-size: 40px;
+        line-height: 45px !important;
+    }
+  }
+@media screen and (max-width: 334px) {
+
+    .books-h2{
+        font-size: 37px;
+        line-height: 45px !important;
+    }
+  }
+@media screen and (max-width: 310px) {
+
+    .books-h2{
+        font-size: 33px;
+        line-height: 40px !important;
+    }
+  }
+@media screen and (max-width: 333px) {
+
+    .ant-tabs-tab{
+        flex: 6 !important;
+    
+    }
+  }

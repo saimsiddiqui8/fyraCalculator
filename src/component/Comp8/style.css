@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+
+.container-comp4{
+    background-color: black;
+    border-top: 1px solid #FF9F20;
+
+}
+
+.h1-text{
+    font-family: Poppins;
+    font-size: 70px;
+    color:#FF9F20 ;
+    /* margin-top: 90px; */
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: -1px;
+}
+
+.para-comp4{
+    font-family: DM Sans;
+    
+}
+
+@media screen and (max-width: 398px) {
+    .h1-text{
+
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
+  }
+@media screen and (max-width: 339px) {
+    .h1-text{
+
+        font-size: 49px;
+        line-height: 60px;
+    }
+    
+  }
