@@ -3,6 +3,8 @@ import "./style.css";
 import React, { useState } from "react";
 import { Col, Dropdown, Row } from "react-bootstrap";
 import countryOptions from "./country";
+import { ToastContainer, toast } from 'react-toastify';
+import emailjs from "emailjs-com";
 
 const Calculator = () => {
     const [totalCost, setTotalCost] = useState(0);
@@ -28,12 +30,13 @@ const Calculator = () => {
         publishingFormat: "Publishing Format",
 
     });
-    const handleInputChange = (value, fieldName) => {
+    const handleInputChange = (selectedOption, fieldName) => {
         setPersonalDetails((prevDetails) => ({
             ...prevDetails,
-            [fieldName]: value,
+            [fieldName]: selectedOption.value,
         }));
     };
+
 
 
     const handleSelect = (eventKey, dropdownName) => {
@@ -65,10 +68,30 @@ const Calculator = () => {
         bookCover: ["Yes", "No"],
         publishingFormat: ["E-Book", "E-book/Paperback", "E-book/Paperback/Hardback"],
     };
+    const notify = () => toast.success("Message sent!");
+    const notifyError = () => toast.error("Error!");
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const formElement = e.target;
+        emailjs.sendForm("service_wbavz6o", "template_3d33t1d", formElement, "8g8qKeeIlQgbYRH2u")
+            .then(res => {
+                const inputField = document.getElementById("lineForm");
+                inputField.reset();
+                notify();
+            })
+            .catch((error) => {
+                notifyError();
+                console.log(error);
+            });
+    };
 
 
 
-    const calculateCost = () => {
+
+
+
+    const calculateCost = (e) => {
+        e.preventDefault();
         const costPerWord = 0.02;
 
         const editingOption = selectedItems.editing;
@@ -119,6 +142,11 @@ const Calculator = () => {
 
         additionalCost += publishingFormatCostMapping[publishingFormat] || 0;
         const calculatedCost = baseCost + additionalCost;
+        if (isNaN(baseCost)) {
+            alert("Please fill in the number of words!");
+            return;
+        }
+        sendEmail(e);
         setTotalCost(calculatedCost);
     };
 
@@ -131,6 +159,7 @@ const Calculator = () => {
         console.log("Publishing:", selectedItems.publishing);
         console.log("Marketing:", selectedItems.marketing);
     };
+
     return (
         <section className="calcBg pb-5">
             <div className="container w-75 text-center py-5">
@@ -138,6 +167,64 @@ const Calculator = () => {
                 <h5 id="calcPara">WHAT YOU CAN EXPECT TO SPEND FOR WRITING,
                     PUBLISHING, AND PROMOTING YOUR BOOK</h5>
             </div>
+            <>
+                <div className="container w-75 pb-5 text-white">
+                    <div className="my-4 pt-3">
+                        <h4 id="personalDetails">Order Details:</h4>
+                        <div id="hr"></div>
+                    </div>
+                    <Row className="text-center">
+                        {Object.keys(selectedItems).map((dropdownName) => (
+                            <Col lg={3} md={3} sm={12} key={dropdownName}>
+                                <Dropdown
+                                    className="text-center"
+                                    onSelect={(eventKey) => handleSelect(eventKey, dropdownName)}
+                                >
+                                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                        {selectedItems[dropdownName]}
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu className="bg-dark text-center">
+                                        {dropdownItems[dropdownName].map((item, index) => (
+                                            <Dropdown.Item
+                                                key={index}
+                                                eventKey={item}
+                                                className="dropdownItem"
+                                            >
+                                                {item}
+                                            </Dropdown.Item>
+                                        ))}
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </Col>
+                        ))}
+                    </Row>
+                    <Row className="text-center mt-5">
+                        {Object.keys(selectedItemsTwo).map((dropdownName) => (
+                            <Col lg={6} md={6} sm={12} key={dropdownName}>
+                                <Dropdown
+                                    className="text-center"
+                                    onSelect={(eventKey) => handleSelectTwo(eventKey, dropdownName)}
+                                >
+                                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                        {selectedItemsTwo[dropdownName]}
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu className="bg-dark text-center">
+                                        {dropdownItemsTwo[dropdownName].map((item, index) => (
+                                            <Dropdown.Item
+                                                key={index}
+                                                eventKey={item}
+                                                className="dropdownItem"
+                                            >
+                                                {item}
+                                            </Dropdown.Item>
+                                        ))}
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </Col>
+                        ))}
+                    </Row>
+                </div>
+            </>
 
             <section>
                 <div className="container w-75 pb-5 text-white">
@@ -145,110 +232,60 @@ const Calculator = () => {
                         <h4 id="personalDetails">Personal Details:</h4>
                         <div id="hr"></div>
                     </div>
-                    <Row>
-                        <Col lg={6} md={6} sm={12}>
-                            <label className="text-white mb-1">Your Name*</label>
-                            <Input
-                                onChange={(e) => handleInputChange(e, "fullName")}
-                                size="large"
-                                placeholder="Your Full Name"
-                                showCount maxLength={25} />
-                        </Col>
-                        <Col lg={6} md={6} sm={12}>
-                            <label className="text-white mb-1">Phone No*</label>
-                            <Input
-                                onChange={(e) => handleInputChange(e, "phoneNumber")}
-                                size="large"
-                                placeholder="Your Phone Number"
-                                type="number" maxLength={20} />
-                        </Col>
-                    </Row>
-                    <Row className="mt-4">
-                        <Col lg={6} md={6} sm={12}>
-                            <label className="text-white mb-1">Your Email*</label>
-                            <Input
-                                onChange={(e) => handleInputChange(e, "email")}
-                                size="large"
-                                placeholder="someone@example.com" />
-                        </Col>
-                        <Col lg={6} md={6} sm={12}>
-                            <label className="text-white mb-1">Country*</label> <br />
-                            <Select
-                                size="large"
-                                className="w-100"
-                                options={countryOptions}
-                                onChange={(e) => handleInputChange(e, "country")}
-                            />
+                    <form onSubmit={calculateCost} id="lineForm" >
+                        <Row>
+                            <Col lg={6} md={6} sm={12}>
+                                <label className="text-white mb-1">Your Name*</label>
+                                <Input
+                                    required
+                                    name="from_name"
+                                    onChange={(e) => handleInputChange(e, "fullName")}
+                                    size="large"
+                                    placeholder="Your Full Name"
+                                    showCount maxLength={25} />
+                            </Col>
+                            <Col lg={6} md={6} sm={12}>
+                                <label className="text-white mb-1">Phone No*</label>
+                                <Input
+                                    required
+                                    onChange={(e) => handleInputChange(e, "phoneNumber")}
+                                    name="phone_number"
+                                    size="large"
+                                    placeholder="Your Phone Number"
+                                    type="number" maxLength={20} />
+                            </Col>
+                        </Row>
+                        <Row className="mt-4">
+                            <Col lg={6} md={6} sm={12}>
+                                <label className="text-white mb-1">Your Email*</label>
+                                <Input
+                                    required
+                                    type="email"
+                                    name="email"
+                                    onChange={(e) => handleInputChange(e, "email")}
+                                    size="large"
+                                    placeholder="someone@example.com" />
+                            </Col>
+                            <Col lg={6} md={6} sm={12}>
+                                <label className="text-white mb-1">Country*</label> <br />
+                                <Select
+                                    size="large"
+                                    className="w-100"
+                                    name="country"
+                                    options={countryOptions}
+                                    onChange={(selectedOption) => handleInputChange(selectedOption, "country")}
+                                />
 
-                        </Col>
-                    </Row>
-                    {isAllFieldsFilled && (
-                        <>
-                            <div className="my-4 pt-3">
-                                <h4 id="personalDetails">Order Details:</h4>
-                                <div id="hr"></div>
-                            </div>
-
-                            <Row className="text-center">
-                                {Object.keys(selectedItems).map((dropdownName) => (
-                                    <Col lg={3} md={3} sm={12} key={dropdownName}>
-                                        <Dropdown
-                                            className="text-center"
-                                            onSelect={(eventKey) => handleSelect(eventKey, dropdownName)}
-                                        >
-                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                                {selectedItems[dropdownName]}
-                                            </Dropdown.Toggle>
-                                            <Dropdown.Menu className="bg-dark text-center">
-                                                {dropdownItems[dropdownName].map((item, index) => (
-                                                    <Dropdown.Item
-                                                        key={index}
-                                                        eventKey={item}
-                                                        className="dropdownItem"
-                                                    >
-                                                        {item}
-                                                    </Dropdown.Item>
-                                                ))}
-                                            </Dropdown.Menu>
-                                        </Dropdown>
-                                    </Col>
-                                ))}
-                            </Row>
-                            <Row className="text-center mt-5">
-                                {Object.keys(selectedItemsTwo).map((dropdownName) => (
-                                    <Col lg={6} md={6} sm={12} key={dropdownName}>
-                                        <Dropdown
-                                            className="text-center"
-                                            onSelect={(eventKey) => handleSelectTwo(eventKey, dropdownName)}
-                                        >
-                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                                {selectedItemsTwo[dropdownName]}
-                                            </Dropdown.Toggle>
-                                            <Dropdown.Menu className="bg-dark text-center">
-                                                {dropdownItemsTwo[dropdownName].map((item, index) => (
-                                                    <Dropdown.Item
-                                                        key={index}
-                                                        eventKey={item}
-                                                        className="dropdownItem"
-                                                    >
-                                                        {item}
-                                                    </Dropdown.Item>
-                                                ))}
-                                            </Dropdown.Menu>
-                                        </Dropdown>
-                                    </Col>
-                                ))}
-                            </Row>
-                        </>
-                    )}
-
+                            </Col>
+                        </Row>
+                        <div className="text-center pt-3">
+                            <button className="calSubmitBtn" disabled={!isAllFieldsFilled}>
+                                Submit
+                            </button>
+                        </div>
+                    </form>
                 </div>
                 <div className="container w-50 pb-5">
-                    <div className="text-center">
-                        <button className="calSubmitBtn" onClick={calculateCost}>
-                            Submit
-                        </button>
-                    </div>
                     <div className="my-4 pt-3">
                         <div className="d-flex flex-col">
                             <h4 id="personalDetails">Cost Estimation:</h4> &nbsp;
